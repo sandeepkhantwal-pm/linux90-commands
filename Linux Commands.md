@@ -1,4 +1,4 @@
-# Heading 1 (Creating 90% workable skills for various sets )
+# Creating 90% workable skills for various sets
 
 Various commands for the linux :--
 Or Top 
@@ -31,7 +31,7 @@ locate       # Find files by name (faster than find)
 du           # Disk usage
 df           # Disk free space
 
-# Text Processing commands :--
+## Text Processing commands :--
 cat          # Concatenate and display files
 more/less    # View file contents page by page
 head         # Display first lines of file
@@ -45,7 +45,7 @@ wc           # Word, line, character count
 cut          # Remove sections from lines
 paste        # Merge lines of files
 
-# System Information commands :--
+## System Information commands :--
 uname        # Print system information
 whoami       # Display current user
 id           # Display user identity
@@ -60,7 +60,7 @@ pkill        # Kill processes by name
 bg/fg        # Background/foreground jobs
 jobs         # List jobs
 
-# Networking commands :--
+## Networking commands :--
 ifconfig/ip  # Network interface configuration
 ping         # Test network connectivity
 traceroute   # Trace packet route
@@ -73,19 +73,19 @@ nmap         # Network exploration tool
 dig          # DNS lookup
 host         # DNS lookup utility
 
-# Package Management (varies by distro) :--
+## Package Management (varies by distro) :--
 apt (Debian/Ubuntu): install, update, upgrade, remove, search
 yum/dnf (RedHat/CentOS/Fedora): install, update, upgrade, remove
 pacman (Arch): -S (install), -Syu (update), -R (remove)
 snap/flatpak # Universal package managers
 
-# Compression and Archiving :--
+## Compression and Archiving :--
 tar          # Archive files
 gzip/gunzip  # Compress/decompress files
 zip/unzip    # Zip compression
 bzip2/bunzip2 # Bzip2 compression
 
-# User Management :--
+## User Management :--
 useradd      # Add user
 usermod      # Modify user
 userdel      # Delete user
@@ -94,7 +94,7 @@ su           # Switch user
 sudo         # Execute as superuser
 groups       # Show user groups
 
-# System Administration :--
+## System Administration :--
 systemctl    # Control system services
 journalctl   # Query systemd journal
 crontab      # Schedule tasks
@@ -104,7 +104,7 @@ mkfs         # Create filesystem
 shutdown     # Shutdown system
 reboot       # Reboot system
 
-# Miscellaneous :--
+## Miscellaneous :--
 echo         # Display text
 history      # Command history
 alias        # Create command aliases
@@ -121,9 +121,9 @@ watch        # Execute command periodically
 
 
 
-Advance Commands :-----
+# Advance Commands :-----
 
-File Editing commands :--
+## File Editing commands :--
 nano         # Simple text editor (easy for beginners)
 vim/vi       # Powerful modal text editor
 emacs        # Extensible text editor
@@ -132,7 +132,7 @@ kate         # GUI text editor (KDE)
 code         # VS Code (if installed)
 sed -i       # Edit files in-place with sed
 
-File Transfer and Remote Operations :--
+## File Transfer and Remote Operations :--
 scp          # Secure copy files over SSH (scp file.txt user@host:/path)
 rsync        # Advanced file sync with compression/delta (rsync -avz file.txt user@host:/path)
 sftp         # Secure FTP client (interactive file transfer)
@@ -143,49 +143,49 @@ ssh          # Secure shell connection (ssh user@host)
 ssh-keygen   # Generate SSH keys for passwordless login
 ssh-copy-id  # Copy SSH public key to remote host
 
-Common Use Cases for Linux Server Environment :--
-# Remote server management
+# Common Use Cases for Linux Server Environment :--
+## Remote server management
 ssh user@server.com
 sudo apt update && sudo apt upgrade  # Update server packages
 
-# File backup and sync
+## File backup and sync
 rsync -avz /local/dir user@backup:/remote/dir
 tar -czf backup.tar.gz /important/files  # Create compressed backup
 
-# Log monitoring
+## Log monitoring
 tail -f /var/log/syslog  # Follow system logs
 journalctl -u service-name  # View systemd service logs
 
-# Process monitoring and management
+## Process monitoring and management
 top  # Real-time process viewer
 ps aux | grep process-name  # Find specific processes
 kill -9 PID  # Force kill process
 systemctl restart service  # Restart services
 
-# Network troubleshooting
+## Network troubleshooting
 ping google.com  # Test connectivity
 netstat -tlnp  # List listening ports
 ss -tlnp  # Modern netstat alternative
 curl -I http://localhost  # Check web server response
 
-# Disk and filesystem management
+## Disk and filesystem management
 df -h  # Check disk usage
 du -sh /directory  # Directory size
 fdisk -l  # List disk partitions
 mount /dev/sdb1 /mnt  # Mount external drive
 
-# Security and permissions
+## Security and permissions
 chmod 644 file.txt  # Set file permissions
 chown user:group file.txt  # Change ownership
 ufw status  # Check firewall status (Ubuntu)
 firewall-cmd --list-all  # Check firewall (CentOS/RHEL)
 
-# Cron jobs for automation
+## Cron jobs for automation
 crontab -e  # Edit cron jobs
-# Example: 0 2 * * * /path/to/backup-script.sh  # Daily backup at 2 AM
+### Example: 0 2 * * * /path/to/backup-script.sh  # Daily backup at 2 AM
 
-# Package installation and updates
-# Debian/Ubuntu: apt install package-name
-# CentOS/RHEL: yum install package-name or dnf install package-name
-# Arch: pacman -S package-name
+## Package installation and updates
+### Debian/Ubuntu: apt install package-name
+### CentOS/RHEL: yum install package-name or dnf install package-name
+### Arch: pacman -S package-name
 
